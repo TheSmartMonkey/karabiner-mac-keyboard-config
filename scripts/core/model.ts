@@ -30,14 +30,12 @@ export enum Applications {
 }
 
 export enum jsonFileNames {
-  // PC_OPTION = 'pc-option-keys',
   PC_REPLACE = 'pc-replace-keys',
   BRACKETS = 'brackets',
   FIREFOX_REDO = 'firefox-redo',
 }
 
 export const jsonFiles: Record<string, Karabiner> = {
-  // 'pc-option-keys': {} as Karabiner,
   'pc-replace-keys': createWindowsNumberKeysJsonFile(),
   brackets: createBracketsJsonFile(),
   'firefox-redo': createFirefoxRedoJsonFile(),

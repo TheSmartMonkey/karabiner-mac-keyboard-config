@@ -1,11 +1,11 @@
-import { Karabiner, KarabinerKeyCodes, KarabinerModifierKeys } from '../helpers/model';
-import { createJsonFilePLaceholder, createManipulators } from '../helpers/helpers';
+import { Karabiner, KarabinerKeyCodes, KarabinerModifierKeys } from '../core/model';
+import { createJsonFilePLaceholder, createRule } from '../core/rules';
 
 /**
  * Replace bracjets [] and {} windows like
  */
 export function createBracketsJsonFile(): Karabiner {
-  const closeCurlyBracket = createManipulators({
+  const closeCurlyBracket = createRule({
     assignShortcuts: [
       {
         modifiers: {
@@ -39,7 +39,7 @@ export function createBracketsJsonFile(): Karabiner {
       },
     ],
   });
-  const closeSquareBracket = createManipulators({
+  const closeSquareBracket = createRule({
     assignShortcuts: [
       {
         modifiers: {
@@ -73,7 +73,7 @@ export function createBracketsJsonFile(): Karabiner {
       },
     ],
   });
-  const openCurlyBracket = createManipulators({
+  const openCurlyBracket = createRule({
     assignShortcuts: [
       {
         modifiers: {
@@ -107,7 +107,7 @@ export function createBracketsJsonFile(): Karabiner {
       },
     ],
   });
-  const openSquareBracket = createManipulators({
+  const openSquareBracket = createRule({
     assignShortcuts: [
       {
         modifiers: {

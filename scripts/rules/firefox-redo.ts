@@ -1,11 +1,11 @@
-import { Applications, Karabiner, KarabinerKeyCodes, KarabinerModifierKeys } from '../helpers/model';
-import { createJsonFilePLaceholder as createJsonFilePlaceholder, createManipulators } from '../helpers/helpers';
+import { Applications, Karabiner, KarabinerKeyCodes, KarabinerModifierKeys } from '../core/model';
+import { createJsonFilePLaceholder as createJsonFilePlaceholder, createRule } from '../core/rules';
 
 /**
  * Replace ctrl + y to redo instead of close in firefox
  */
 export function createFirefoxRedoJsonFile(): Karabiner {
-  const redoFirefox1 = createManipulators({
+  const redoFirefox1 = createRule({
     assignShortcuts: [
       {
         modifiers: {

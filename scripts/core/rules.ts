@@ -1,5 +1,6 @@
 import { Applications, Karabiner, KarabinerManipulators, KarabinerModifier } from './model';
 
+// TODO: Regroupe in 1 file
 export function createJsonFilePLaceholder(title: string, description: string, manipulators: KarabinerManipulators[]): Karabiner {
   return { title, rules: [{ description, manipulators }] };
 }
@@ -8,10 +9,10 @@ export function createJsonFilePLaceholder(title: string, description: string, ma
  * Assign new shortcuts
  * @param assignShortcuts all keys you want to assign a shortcut
  * @param assignKeys the shortcut you want to assign
- * @param onlyAppliesForThisApplications 
- * @returns 
+ * @param onlyAppliesForThisApplications
+ * @returns
  */
-export function createManipulators({
+export function createRule({
   assignShortcuts,
   assignKeys,
   onlyAppliesForThisApplications,

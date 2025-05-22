@@ -1,12 +1,12 @@
-import { createJsonFilePLaceholder, createManipulators } from '../helpers/helpers';
-import { Karabiner, KarabinerKeyCodes, KarabinerModifierKeys } from '../helpers/model';
+import { Karabiner, KarabinerKeyCodes, KarabinerModifierKeys } from '../core/model';
+import { createJsonFilePLaceholder, createRule } from '../core/rules';
 
 /**
  * Replace number to be like windows (tiré du 6)
  * TODO: Fix shift + 6
  */
 export function createWindowsNumberKeysJsonFile(): Karabiner {
-  const option6 = createManipulators({
+  const option6 = createRule({
     assignShortcuts: [
       {
         modifiers: {
@@ -23,7 +23,7 @@ export function createWindowsNumberKeysJsonFile(): Karabiner {
       },
     ],
   });
-  const optionShift6 = createManipulators({
+  const optionShift6 = createRule({
     assignShortcuts: [
       {
         modifiers: {
