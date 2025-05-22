@@ -1,0 +1,12 @@
+{
+  "title": "package.json",
+  "name": "mac-keys",
+  "version": "1.0.0",
+  "scripts": {
+    "create": "npx ts-node scripts/main.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.103",
+    "typescript": "^4.9.5"
+  }
+}
