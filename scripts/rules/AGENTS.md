@@ -7,6 +7,7 @@ Une fabrique par fichier, un fichier par JSON généré. Modèle à suivre : `fi
 - Touches, modificateurs et applications : enums de `scripts/core/model.ts`. Ajouter une valeur manquante dans l'enum, pas une chaîne dans la règle.
 - `from` = frappe reçue, modificateurs en objet. `to` = frappe émise, modificateurs en tableau.
 - Limiter à une application avec `onlyAppliesForThisApplications`.
+- Limiter à un clavier avec `onlyAppliesForTheseDevices`.
 - Étaler les manipulators : `[...regleA, ...regleB]`.
 - Commentaire de tête en français, qui décrit l'effet pour la personne qui tape.
 - Pas d'import d'un autre fichier de ce dossier. Pas de `fs`.

@@ -25,7 +25,7 @@ Une règle n'existe pour le générateur que si les deux entrées suivantes sont
 
 `scripts/main.ts` itère `Object.values(jsonFileNames)` et écrit `assets/complex_modifications/<nom>.json`.
 
-Aujourd'hui, seuls ces trois noms sont générés : `pc-replace-keys`, `brackets`, `firefox-redo`.
+Aujourd'hui, seuls ces noms sont générés : `pc-replace-keys`, `brackets`, `firefox-redo`, `keychron-b1-pro`.
 
 `scripts/rules/pc-option-keys.ts` est un brouillon. Ne l'enregistre pas tant qu'il ne renvoie pas un `Karabiner`.
 

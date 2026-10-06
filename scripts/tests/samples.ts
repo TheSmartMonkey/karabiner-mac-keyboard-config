@@ -1,3 +1,34 @@
+export function keychronDeviceSwapSample() {
+  return [
+    {
+      type: 'basic',
+      from: {
+        modifiers: {
+          optional: ['any'],
+        },
+        key_code: 'non_us_backslash',
+      },
+      to: [
+        {
+          key_code: 'grave_accent_and_tilde',
+        },
+      ],
+      conditions: [
+        {
+          type: 'device_if',
+          identifiers: [
+            {
+              vendor_id: 13364,
+              product_id: 1819,
+              is_keyboard: true,
+            },
+          ],
+        },
+      ],
+    },
+  ];
+}
+
 export function firefoxRedoSample() {
   return {
     title: 'Personal keys',

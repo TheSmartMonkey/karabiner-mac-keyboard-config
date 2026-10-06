@@ -1,5 +1,5 @@
-import { firefoxRedoSample } from '../tests/samples';
-import { KarabinerKeyCodes, KarabinerModifierKeys } from './model';
+import { firefoxRedoSample, keychronDeviceSwapSample } from '../tests/samples';
+import { KarabinerDevices, KarabinerKeyCodes, KarabinerModifierKeys } from './model';
 import { createRule } from './rules';
 
 describe('rules', () => {
@@ -24,5 +24,31 @@ describe('rules', () => {
 
     // Then
     expect(rule).toEqual(firefoxRedoSample());
+  });
+
+  it('should limit a key swap to one keyboard', () => {
+    // Given
+    const assignShortcuts = [
+      {
+        modifiers: {
+          optional: [KarabinerModifierKeys.ANY],
+        },
+        key_code: KarabinerKeyCodes.INFERIEUR,
+      },
+    ];
+    const assignKeys = [
+      {
+        key_code: KarabinerKeyCodes.AROBAS,
+      },
+    ];
+    // When
+    const rule = createRule({
+      assignShortcuts,
+      assignKeys,
+      onlyAppliesForTheseDevices: [KarabinerDevices.KEYCHRON_B1_PRO],
+    });
+
+    // Then
+    expect(rule).toEqual(keychronDeviceSwapSample());
   });
 });

@@ -1,5 +1,6 @@
 import { createBracketsJsonFile } from '../rules/brackets';
 import { createFirefoxRedoJsonFile } from '../rules/firefox-redo';
+import { createKeychronB1ProJsonFile } from '../rules/keychron-b1-pro';
 import { createWindowsNumberKeysJsonFile } from '../rules/pc-replace-keys';
 
 export enum KarabinerModifierKeys {
@@ -23,22 +24,40 @@ export enum KarabinerKeyCodes {
   Y = 'y',
   Z = 'w',
   W = 'z',
+  AROBAS = 'grave_accent_and_tilde',
+  INFERIEUR = 'non_us_backslash',
 }
 
 export enum Applications {
   FIREFOX = '^org\\.mozilla\\.firefox$',
 }
 
+export type KarabinerDeviceIdentifier = {
+  vendor_id: number;
+  product_id: number;
+  is_keyboard: boolean;
+};
+
+export const KarabinerDevices: { KEYCHRON_B1_PRO: KarabinerDeviceIdentifier } = {
+  KEYCHRON_B1_PRO: {
+    vendor_id: 13364,
+    product_id: 1819,
+    is_keyboard: true,
+  },
+};
+
 export enum jsonFileNames {
   PC_REPLACE = 'pc-replace-keys',
   BRACKETS = 'brackets',
   FIREFOX_REDO = 'firefox-redo',
+  KEYCHRON_B1_PRO = 'keychron-b1-pro',
 }
 
 export const jsonFiles: Record<string, Karabiner> = {
   'pc-replace-keys': createWindowsNumberKeysJsonFile(),
   brackets: createBracketsJsonFile(),
   'firefox-redo': createFirefoxRedoJsonFile(),
+  'keychron-b1-pro': createKeychronB1ProJsonFile(),
 };
 
 export type Karabiner = {
@@ -58,7 +77,7 @@ export type KarabinerManipulators = {
 };
 
 export type KarabinerModifier = {
-  modifiers: KarabinerMandatoryModifier | KarabinerModifierKeys[];
+  modifiers?: KarabinerMandatoryModifier | KarabinerModifierKeys[];
   key_code: KarabinerKeyCodes;
 };
 
