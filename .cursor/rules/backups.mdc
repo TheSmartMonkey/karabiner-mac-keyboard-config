@@ -1,0 +1,7 @@
+---
+description: Sauvegardes automatiques Karabiner-Elements
+globs: automatic_backups/**/*.json
+alwaysApply: false
+---
+
+Avant de modifier `automatic_backups/**`, lis `automatic_backups/AGENTS.md`. Il prévaut sur `AGENTS.md` à la racine.

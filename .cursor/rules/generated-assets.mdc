@@ -1,0 +1,7 @@
+---
+description: JSON de complex modifications, générés ou historiques
+globs: assets/**/*.json
+alwaysApply: false
+---
+
+Avant de modifier `assets/**`, lis `assets/AGENTS.md`. Il prévaut sur `AGENTS.md` à la racine.

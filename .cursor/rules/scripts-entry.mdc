@@ -1,0 +1,7 @@
+---
+description: Point d'entrée du générateur Karabiner
+globs: scripts/main.ts
+alwaysApply: false
+---
+
+Avant de modifier `scripts/main.ts`, lis `scripts/AGENTS.md`. Il prévaut sur `AGENTS.md` à la racine.

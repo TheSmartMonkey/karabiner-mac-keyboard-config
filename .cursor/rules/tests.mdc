@@ -1,0 +1,7 @@
+---
+description: Fixtures des tests de règles
+globs: scripts/tests/**/*.ts
+alwaysApply: false
+---
+
+Avant de modifier `scripts/tests/**`, lis `scripts/tests/AGENTS.md`. Il prévaut sur `AGENTS.md` à la racine.

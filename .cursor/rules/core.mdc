@@ -1,0 +1,7 @@
+---
+description: Primitives, registre et fabrique de manipulators
+globs: scripts/core/**/*.ts
+alwaysApply: false
+---
+
+Avant de modifier `scripts/core/**`, lis `scripts/core/AGENTS.md`. Il prévaut sur `AGENTS.md` à la racine.

@@ -2,6 +2,8 @@
 
 My mac keys for Karabiner config
 
+Les conventions sont dans [docs/architecture.md](docs/architecture.md) et [docs/bonnes-pratiques.md](docs/bonnes-pratiques.md). Les agents lisent [AGENTS.md](AGENTS.md) et le fichier `AGENTS.md` le plus proche du fichier modifié.
+
 ## vscode
 
 ### Import extensions

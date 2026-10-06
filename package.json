@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "ts-node scripts/main.ts",
-    "test": "jest"
+    "test": "jest",
+    "verify": "npm test"
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",

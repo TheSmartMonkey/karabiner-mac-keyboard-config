@@ -1,0 +1,7 @@
+---
+description: Profil Karabiner-Elements installé
+globs: karabiner.json
+alwaysApply: false
+---
+
+Avant de modifier `karabiner.json`, lis la section Profil installé de `docs/bonnes-pratiques.md`.

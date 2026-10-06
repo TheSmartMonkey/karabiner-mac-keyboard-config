@@ -1,0 +1,7 @@
+---
+description: Déclaration des complex modifications
+globs: scripts/rules/**/*.ts
+alwaysApply: false
+---
+
+Avant de modifier `scripts/rules/**`, lis `scripts/rules/AGENTS.md`. Il prévaut sur `AGENTS.md` à la racine.
