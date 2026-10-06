@@ -4,6 +4,10 @@ My mac keys for Karabiner config
 
 Les conventions sont dans [docs/architecture.md](docs/architecture.md) et [docs/bonnes-pratiques.md](docs/bonnes-pratiques.md). Les agents lisent [AGENTS.md](AGENTS.md) et le fichier `AGENTS.md` le plus proche du fichier modifié.
 
+## Getting started
+
+Dans Karabiner-Elements, onglet **Devices**, cocher **Modify events** sur le Keychron B1 Pro. S’il apparaît plusieurs fois, cocher l’entrée qui reçoit les touches. Le câble, le Bluetooth et le 2,4 GHz sont trois appareils distincts : la case cochée pour l’un ne vaut pas pour les autres.
+
 ## vscode
 
 ### Import extensions
