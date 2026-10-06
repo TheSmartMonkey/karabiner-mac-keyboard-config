@@ -1,6 +1,7 @@
 import { firefoxRedoSample } from '../tests/samples';
 import { KarabinerKeyCodes, KarabinerModifierKeys } from './model';
 import { createRule } from './rules';
+
 describe('rules', () => {
   it('should create a rule', () => {
     // Given
